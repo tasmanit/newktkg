@@ -32,7 +32,7 @@ tabsButtons.forEach(btn => {
     nextActiveItem.classList.add('_active');
   });
 });
-$('.owl-carousel').owlCarousel({
+$('#slider').owlCarousel({
     loop:true,
     margin:10,
     nav:true,
@@ -60,6 +60,36 @@ $('.news').owlCarousel({
         },
         1000:{
             items:1
+        }
+    }
+});
+$('#tarifin').owlCarousel({
+    margin:10,
+    nav:true,
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:2
+        },
+        1000:{
+            items:4
+        }
+    }
+});
+$('#tarifip').owlCarousel({
+    margin:10,
+    nav:true,
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:2
+        },
+        1000:{
+            items:4
         }
     }
 });

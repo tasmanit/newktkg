@@ -6,7 +6,8 @@
 
 
 .topline{
-    background: linear-gradient(to left,#2c4798,#003153);
+    background:  #009496;
+    font-size: .8em;
 }
 .topline-wrap{
     display: flex;
@@ -68,9 +69,12 @@
     padding: 10px 10px;
     display: block;
 }
+.topline-wrap2 ul li a>i{
+    color: #ffee2d;
+}
 
 .menuwrap{
-    height: 60px;
+    height: 90px;
     margin: 10px 0;
     display: flex;
     align-items: center;
@@ -97,9 +101,9 @@ nav ul li{
 nav ul li a{
     padding: 15px 15px;
     text-decoration: none;
-    font-family: "Roboto", sans-serif;
+    font-family: "Play", sans-serif;
     font-size: 1.2em;
-    color: #333;
+    color: #888888;
 }
 
 
@@ -120,27 +124,20 @@ nav ul li a{
     height: 350px;
     /* border-radius: 15px; */
     overflow: hidden;
+    display: block;
 }
-.sliderwrap .item .content{
-    position: absolute;
-    top: 25%;
-    left: 5%;
-    z-index: 5;
-}
-.sliderwrap .item .images{
+.sliderwrap .content{
+    margin-top: 75px;
     position: absolute;
     top: 0;
     left: 0;
     bottom: 0;
     right: 0;
-    height: 400px;
     
-    z-index: 1;
 }
 .sliderwrap .item .images img{
-    max-width: 100%;
     object-fit: cover;
-    height: 100%;
+    max-width: 100%;
 }
 .sliderwrap .item .title{
     
@@ -160,8 +157,13 @@ nav ul li a{
     padding: 10px 25px;
 }
 
+
+
+
+
+
 .tarifwrap{
-    margin: 50px 0;
+    margin: 100px 0 50px;
 }
 .tarifwrap .tabs{}
 .tarifwrap .tabs .tabs__nav{
@@ -175,19 +177,68 @@ nav ul li a{
     border: 0;
     background: transparent;
 
-    color: #003153;
+    color: #ccc;
     font-size: 1.2em;
     text-transform: uppercase;
     /* border-bottom: 1px solid #003153; */
-
 }
+.tarifwrap .tabs .tabs__button.active{
+    color: #009496;
+}
+.tarifwrap #tarifin .item{
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-top: 20px;
+    border: 1px solid #ccc;
+} 
+.tarifwrap #tarifin .item .header{
+    background: #009496;
+    padding: 20px 15px 10px;
+    color: #fff;
+}
+.tarifwrap #tarifin .item .header h4{}
+.tarifwrap #tarifin .item .header .desc{} 
+.tarifwrap #tarifin .item .content{
+    padding: 20px 15px 10px;
+}
+.tarifwrap #tarifin .item .content ul{}
+.tarifwrap #tarifin .item .content ul li{}
+.tarifwrap #tarifin .item .price{
+    padding: 0 15px 10px;
+}
+.tarifwrap #tarifin .item .price ul{
+    list-style: none;
+    text-align: right;
+}
+.tarifwrap #tarifin .item .price ul li:nth-child(2){
+    font-size: 2em;
+    font-weight: bold;
+    color: #009496;
+}
+.tarifwrap #tarifin .item .footer{
+    padding: 0 15px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.tarifwrap #tarifin .item .footer button{
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    background: #009496;
+    color: #fff;
+    width: 100%;
+}
+
+
 
 
 .tabs__item:not(._active) {
     display: none;
 }
 .newswrap{
-    padding: 50px 0;
+    padding: 100px 0;
 }
 .wrap-news{
     background: #f1f8ff;
@@ -210,6 +261,7 @@ nav ul li a{
 
 .boxwrap{
     padding: 50px 0;
+    background: #009496;
 }
 .box-wrap{
     display: grid;
@@ -219,17 +271,33 @@ nav ul li a{
     grid-gap: 15px;
 }
 .box-wrap .box{
-    background: linear-gradient(to left,#2c4798,#003153);
+    cursor: pointer;
+    /* background: #f1f8ff; */
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     color:#fff;
     overflow: hidden;
+    border-radius: 10px;
+    transition: .5s;
+    border: 1px solid #01abad;
+    box-shadow: 
+    /* -5px -5px 7px rgba(255,255,255,0.5),
+            5px 5px 7px rgba(70,70,70,0.12),  */
+            inset 0px 0px 0px rgba(255, 255, 255, 0.5), 
+            inset 0px 0px 0px rgba(70, 70, 70, 0.12);
+}
+.box-wrap .box:hover{
+    box-shadow: 
+    /* -5px -5px 7px rgba(255,255,255,0.5),
+            5px 5px 7px rgba(70,70,70,0.12),  */
+            inset -5px -5px 7px rgba(255, 255, 255, 0.5), 
+            inset 5px 5px 7px rgba(70, 70, 70, 0.12);
 }
 .box-wrap .box .img{
     font-size: 2em;
-    color:#fff;
+    color: #fff;
 }
 .box-wrap .box img{
     max-height: 100%;
@@ -248,7 +316,7 @@ nav ul li a{
 
 
 .reklama{
-    background: linear-gradient(to left,#2c4798,#003153);
+    background: #009496;
     padding: 50px 0;
 }
 .reklamawrap{}
@@ -265,7 +333,7 @@ nav ul li a{
 }
 .reklamawrap .btn{
     background: #ffee2d;
-    color: #003153;
+    color: #000;
     padding: 15px 25px;
 }
 
@@ -297,13 +365,14 @@ nav ul li a{
 
 
 footer{
-    background: linear-gradient(to left,#2c4798,#003153);
-    padding: 50px 0;
+    background: #009496;
+    padding: 75px 0 50px;
 }
 .footerwrap{}
 .footerwrap h4{
     color: #fff;
     margin-bottom: 10px;
+    font-family: "Play", sans-serif;
 }
 .footerwrap ul{
     list-style: none;
@@ -314,12 +383,18 @@ footer{
 .footerwrap ul li a{
     color:#ccc;
     text-decoration: none;
+    transition: .5s ;
+}
+.footerwrap ul li a:hover{
+    color: #2c4798;
 }
 
 
 .copyright{
     background: #fff;
+    font-size: .8s;
+    padding: 10px;
 }
 .copyrightwrap{
-    color: #003153;
+    color: #888888;
 }
