@@ -64,8 +64,9 @@ $('.news').owlCarousel({
     }
 });
 $('#tarifin').owlCarousel({
-    margin:10,
-    nav:true,
+    margin:15,
+    nav:false,
+    dots:true,
     responsive:{
         0:{
             items:1
@@ -74,7 +75,7 @@ $('#tarifin').owlCarousel({
             items:2
         },
         1000:{
-            items:4
+            items:4,
         }
     }
 });
