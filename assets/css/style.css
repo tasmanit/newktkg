@@ -339,6 +339,12 @@ nav ul li a:hover:after{
     position: relative;
     box-shadow: 0 125px 80px rgb(23 58 105 / 7%), 0 81.0185px 46.8519px rgb(23 58 105 / 5%), 0 48.1481px 25.4815px rgb(23 58 105 / 4%), 0 25px 13px rgb(23 58 105 / 4%), 0 10.1852px 6.51852px rgb(23 58 105 / 3%), 0 2.31481px 3.14815px rgb(23 58 105 / 2%);
 }
+.wrap-news .date{
+    color: #888;
+    margin-bottom: 10px;
+    font-size: .7em;
+
+}
 .wrap-news .title{
     color: #008ADF;
     font-size: 1.3em;
@@ -463,6 +469,56 @@ nav ul li a:hover:after{
 }
 .tv .tvimg{
     box-shadow: 0 125px 80px rgb(23 58 105 / 7%), 0 81.0185px 46.8519px rgb(23 58 105 / 5%), 0 48.1481px 25.4815px rgb(23 58 105 / 4%), 0 25px 13px rgb(23 58 105 / 4%), 0 10.1852px 6.51852px rgb(23 58 105 / 3%), 0 2.31481px 3.14815px rgb(23 58 105 / 2%);
+}
+
+.itrsno{
+    padding: 50px 0;
+    overflow: hidden;
+}
+.itrsno h3{
+    font-size: 2em;
+    color: #888;
+    margin-bottom: 30px;
+}
+.itrsno .owl-stage-outer{
+    overflow: visible;
+}
+.itrsno .item{
+    background: #F2F3F7;
+    border-radius: 15px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: .5s;
+}
+.itrsno .item:hover{
+    box-shadow: 0 125px 80px rgb(23 58 105 / 7%), 0 81.0185px 46.8519px rgb(23 58 105 / 5%), 0 48.1481px 25.4815px rgb(23 58 105 / 4%), 0 25px 13px rgb(23 58 105 / 4%), 0 10.1852px 6.51852px rgb(23 58 105 / 3%), 0 2.31481px 3.14815px rgb(23 58 105 / 2%);
+}
+.itrsno .item .img{
+    max-width: 100%;
+}
+.itrsno .item .title{
+    color: #008ADF;
+    padding: 15px;
+    min-height: 126px;
+}
+.itrsno .item .content{
+    color: #888;
+}
+.itrsno .item .date{
+    font-size: .8em;
+    padding: 0 15px 15px 15px;
+}
+.itrsno .owl-dots{
+
+}
+.itrsno .owl-dots  button{
+    background: #888;
+    width: 10px;
+    height: 10px;
+    margin-right: 10px;
+}
+.itrsno .owl-dots button.active{
+    background: #008ADF;
 }
 
 
