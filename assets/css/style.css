@@ -16,7 +16,7 @@
     padding-top: 5px;
 }
 .topline-wrap1{
-background: red;
+
 }
 .topline-wrap1 ul{
     list-style: none;
@@ -28,6 +28,15 @@ background: red;
 .topline-wrap1 ul li{
     margin-right: 5px;
 }
+.topline-wrap1 ul li.cam{
+    background: #008ADF;
+    border-radius: 10px;
+    
+}
+.topline-wrap1 ul li.cam a{
+    color: #fff!important;
+    padding: 10px 15px;
+}
 .topline-wrap1 ul li a{
     color: #969fa8;
     text-decoration: none;
@@ -35,25 +44,23 @@ background: red;
     display: block;
     border-radius: 5px 5px 0 0;
     font-weight: bold;
+    transition: .5s;
 }
 .topline-wrap1 ul li a.active{
-    background: #fff;
+    /* background: #fff; */
     text-decoration: none;
     padding: 10px 10px;
     display: block;
 
-    color: #ff0032;
-}
-.topline-wrap1 ul li.cam{
-    
+    color: #000;
 }
 .topline-wrap1 ul li a:hover{
-    background: #fff;
+    /* background: #fff; */
     text-decoration: none;
     padding: 10px 10px;
     display: block;
 
-    color: #ff0032;
+    color: #000;
 }
 .topline-wrap2{
     display: flex;
@@ -78,17 +85,18 @@ background: red;
     transition: .5s;
 }
 .topline-wrap2 ul li a:hover{
-    color: #ff0032;
+    color: #000;
 }
 .topline-wrap2 ul li a>i{
     color: #ffee2d;
 }
 .lang{
     position: relative;
+    display: flex;
 }
-.lang .langlink{
+.lang .langlink, .lang .fa-earth-americas{
     display: block;
-    color: #969fa8;;
+    color: #000;;
     text-decoration: none;
     padding: 10px 10px;
     display: block;
@@ -96,9 +104,14 @@ background: red;
     transition: .5s;
 
 }
+.lang .fa-earth-americas{
+    padding: 12px 0 10px 10px;
+    font-size: 1.1em;
+}
 .lang .langbox{
     display: none;
     position: absolute;
+    width: 100%;
     top: 100%;
     left: 0;
     z-index: 10;
@@ -143,7 +156,7 @@ nav ul li{
 nav ul li a{
     padding: 10px 15px;
     text-decoration: none;
-    font-family: "Roboto", sans-serif;
+    font-family: "Jost", sans-serif;
     font-size: 1.1em;
     color: #000;
     transition: .5s;
@@ -210,6 +223,7 @@ nav ul li a:hover:after{
 .sliderwrap{
     overflow: hidden;
     max-height: 400px;
+    position: relative;
 }
 .sliderwrap .item{
     position: relative;
@@ -227,6 +241,12 @@ nav ul li a:hover:after{
     right: 0;
     
 }
+.sliderwrap .item .images{
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 .sliderwrap .item .images img{
     object-fit: cover;
     max-width: 100%;
@@ -242,16 +262,34 @@ nav ul li a:hover:after{
 .sliderwrap .item .desc{
     color: #fff;
     margin-bottom: 15px;
+    width: 40%;
     
 }
 .sliderwrap .item .btn{
     font-family: "Play", sans-serif;
-    color: #fff;
-    padding: 10px 25px 10px 5px;
+    color: #888;
+    padding: 15px 25px;
     text-transform: uppercase;
+    background: #fff;
+    margin-top: 80px;
+
 }
-
-
+.sliderwrap .owl-nav{
+    position: absolute;
+    right: 15%;
+    bottom: 50px;
+    z-index: 150;
+}
+.sliderwrap .owl-nav .owl-prev span,
+.sliderwrap .owl-nav .owl-next span{
+    font-size: 50px;
+    margin-right: 15px;
+    border-radius: 10px;
+    color: #fff;
+    background: rgba(255, 255, 255, 0.2);
+    font-size: 50px;
+    padding: 0 10px 10px 10px !important;
+}
 
 
 
@@ -259,7 +297,7 @@ nav ul li a:hover:after{
     overflow: hidden;
 }
 .tarifwrap{
-    margin: 100px 0 50px;
+    margin: 100px 0 100px;
 }
 .tarifwrap .tabs{}
 .tarifwrap .tabs .tabs__nav{
@@ -294,15 +332,24 @@ nav ul li a:hover:after{
     box-shadow: 0 125px 80px rgb(23 58 105 / 7%), 0 81.0185px 46.8519px rgb(23 58 105 / 5%), 0 48.1481px 25.4815px rgb(23 58 105 / 4%), 0 25px 13px rgb(23 58 105 / 4%), 0 10.1852px 6.51852px rgb(23 58 105 / 3%), 0 2.31481px 3.14815px rgb(23 58 105 / 2%);
 } 
 .tarifwrap #tarifin .item .header{
-    padding: 25px 35px 10px;
-    color: #000;
+    padding: 35px 35px 0px 35px;
+    color: #888;
 }
 .tarifwrap #tarifin .item .header h4{
     color: #008ADF;
+    font-weight: bold;
 }
 .tarifwrap #tarifin .item .header .desc{} 
 .tarifwrap #tarifin .item .content{
-    padding: 20px 15px 10px;
+    padding: 0 15px 10px;
+}
+.tarifwrap #tarifin .item .content .contentdesc{
+    padding: 1em;
+    background: #008ADF;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    margin: 1em;
+    color: #fff;
 }
 .tarifwrap #tarifin .item .content ul{
     padding-left: 1em;
@@ -323,11 +370,22 @@ nav ul li a:hover:after{
     font-weight: bold;
     color: #008ADF;
 }
-.tarifwrap #tarifin .content ul li i{
+.tarifwrap #tarifin .content ul li .svg-inline--fa{
     color: #008ADF;
 }
+.tarifwrap #tarifin .content ul li {
+    font-weight: bold;
+    color: #008ADF;
+}
+.tarifwrap #tarifin .content ul li span{
+    color: #888;
+    font-weight: normal;
+}
+.tarifwrap #tarifin .content ul li .fa-solid{
+    fill: #008ADF!important;
+}
 .tarifwrap #tarifin .item .footer{
-    padding: 0 15px 10px;
+    padding: 0 15px 15px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -338,6 +396,7 @@ nav ul li a:hover:after{
     border-radius: 10px;
     background: #008ADF;
     color: #fff;
+    width: 48%;
 }
 .tarifwrap #tarifin .item .footer button:nth-child(1){
     background: #fff;
@@ -500,15 +559,18 @@ nav ul li a:hover:after{
     color: #008ADF;
     margin-bottom: 10px;
 }
-.tv .tvimg img{
-    max-width: 100%;
-}
 .tv .tvimg{
-    box-shadow: 0 125px 80px rgb(23 58 105 / 7%), 0 81.0185px 46.8519px rgb(23 58 105 / 5%), 0 48.1481px 25.4815px rgb(23 58 105 / 4%), 0 25px 13px rgb(23 58 105 / 4%), 0 10.1852px 6.51852px rgb(23 58 105 / 3%), 0 2.31481px 3.14815px rgb(23 58 105 / 2%);
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.tv .tvimg img{
+    height: 460px;
 }
 
+
 .itrsno{
-    padding: 50px 0;
+    padding: 100px 0;
     overflow: hidden;
 }
 .itrsno h3{
@@ -525,27 +587,58 @@ nav ul li a:hover:after{
     overflow: hidden;
     cursor: pointer;
     transition: .5s;
+    height: 400px;
+    position: relative;
 }
 .itrsno .item:hover{
     box-shadow: 0 125px 80px rgb(23 58 105 / 7%), 0 81.0185px 46.8519px rgb(23 58 105 / 5%), 0 48.1481px 25.4815px rgb(23 58 105 / 4%), 0 25px 13px rgb(23 58 105 / 4%), 0 10.1852px 6.51852px rgb(23 58 105 / 3%), 0 2.31481px 3.14815px rgb(23 58 105 / 2%);
 }
 .itrsno .item .img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+.itrsno .item .img:before{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(0,212,255,0.1) 100%);
+    content: "";
 }
 .itrsno .item .img img{
-    height: 250px;
     object-fit: cover;
+    height: 400px;
 }
 .itrsno .item .title{
-    color: #008ADF;
+    color: #fff;
+    font-weight: bold;
     padding: 15px;
     min-height: 126px;
+    position: absolute;
+    left: 20px;
+    bottom: 20px;
+    right: 20px;
+    z-index: 50;
+
+    font-size: 1.2em;
+
 }
 .itrsno .item .content{
     color: #888;
 }
 .itrsno .item .date{
+    position: absolute;
+    z-index: 50;
+    top: 20px;
+    right: 20px;
+    background: #fff;
     font-size: .8em;
-    padding: 0 15px 15px 15px;
+    padding: 5px 10px;
+    border-radius: 10px;
     color: #888;
 }
 .itrsno .owl-dots{
@@ -727,19 +820,19 @@ footer{
 
 
 .tvlistbox{
-    background: #888;
+    background: #fff;
     border-radius: 0;
     padding: 50px 0;
 }
 .tvitems{
     display: grid;
     /* grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); */
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-auto-rows: 200px;
     grid-auto-flow: danse;
     grid-gap: 15px;
 }
-.tvitems .tvitem:nth-child(3){
+.tvitems .tvitem:nth-child(2){
     grid-column: span 1;
     grid-row: span 2;
 }
@@ -755,7 +848,7 @@ footer{
     grid-column: span 1;
     grid-row: span 2;
 }
-.tvitems .tvitem:nth-child(9){
+.tvitems .tvitem:nth-child(12){
     grid-column: span 2;
     grid-row: span 2;
 }
@@ -782,6 +875,9 @@ footer{
 
 
 
+.servicesec{
+    padding: 100px 0;
+}
 
 .serviceitems{
     display: grid;
@@ -803,19 +899,41 @@ footer{
 }
 .serviceitems .serviceitem:nth-child(3){
     grid-column: span 2;
-    grid-row: span 1;
+    grid-row: span 2;
+}
+.serviceitems .serviceitem:nth-child(4){
+    grid-column: span 1;
+    grid-row: span 2;
+}
+.serviceitems .serviceitem:nth-child(5){
+    grid-column: span 1;
+    grid-row: span 2;
 }
 .serviceitems .serviceitem .img{
     position: absolute;
     top: 0;
     left: 0;
+    right: 0;
+    bottom: 0;
     display: flex;
-    align-items: center;
     justify-content: center;
     height: 100%;
+    
 }
+.serviceitems .serviceitem .img:before{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    content: "";
+    background: #008ADF;
+    opacity: .3;
+}
+/* 008ADF */
 .serviceitems .serviceitem .img img{
     object-fit: cover; 
+    max-height: 100%;
 
 }
 .serviceitems .serviceitem .title{
@@ -839,4 +957,105 @@ footer{
     text-transform: uppercase;
     font-weight: bold;
     color: #fff;
+}
+
+.otziv{
+    padding: 100px 0;
+    
+    background: url(https://images.pexels.com/photos/733856/pexels-photo-733856.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1) no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+.otziv:before{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: rgba(2,0,36,0.3);
+}
+.otziv .otzivwrap{
+
+}
+.otziv .item{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+}
+.otziv .item .logo{
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 25px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+
+}
+.otziv .item .title{
+    color: #fff;
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+.otziv .item .desc{
+    width: 70%;
+    color: #fff;
+    text-align: center;
+}
+#otziv{
+    position: relative;
+}
+.otziv .owl-carousel .owl-nav{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    font-size: 50px;
+    color: #fff;
+    z-index: 50;
+    
+}
+
+
+
+.market{}
+.marketwrap{}
+.marketwrap .item{
+    padding: 20px 30px;
+    background: #fff;
+    border-radius: 10px;
+}
+.marketwrap .item .images{}
+.marketwrap .item .price{
+    font-size: 2em;
+    font-weight: bold;
+
+}
+.marketwrap .item .title{
+    color: #008ADF;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.marketwrap .item .btn{
+    width: 100%;
+    padding: 0;
+}
+.marketwrap .item .btn button{
+    border: none;
+    background: #008ADF;
+    padding: 10px 15px;
+    color: #fff;
+    width: 100%;
+    display: block;
+    border-radius: 10px;
 }
