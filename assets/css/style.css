@@ -6,7 +6,7 @@
 
 
 .topline{
-    background:  #fff;
+    background:  #1d2023;
     font-size: .8em;
 }
 .topline-wrap{
@@ -35,7 +35,7 @@
 }
 .topline-wrap1 ul li.cam a{
     color: #fff!important;
-    padding: 10px 15px;
+    padding: 5px 15px;
 }
 .topline-wrap1 ul li a{
     color: #969fa8;
@@ -52,7 +52,7 @@
     padding: 10px 10px;
     display: block;
 
-    color: #000;
+    color: #fff;
 }
 .topline-wrap1 ul li a:hover{
     /* background: #fff; */
@@ -60,7 +60,7 @@
     padding: 10px 10px;
     display: block;
 
-    color: #000;
+    color: #fff;
 }
 .topline-wrap2{
     display: flex;
@@ -96,7 +96,7 @@
 }
 .lang .langlink, .lang .fa-earth-americas{
     display: block;
-    color: #000;;
+    color: #fff;;
     text-decoration: none;
     padding: 10px 10px;
     display: block;
@@ -286,7 +286,7 @@ nav ul li a:hover:after{
     margin-right: 15px;
     border-radius: 10px;
     color: #fff;
-    background: rgba(255, 255, 255, 0.2);
+    /* background: rgba(255, 255, 255, 0.2); */
     font-size: 50px;
     padding: 0 10px 10px 10px !important;
 }
@@ -400,8 +400,8 @@ nav ul li a:hover:after{
 }
 .tarifwrap #tarifin .item .footer button:nth-child(1){
     background: #fff;
-    border: 1px solid #008ADF;
-    color: #008ADF;
+    border: 1px solid #ccc;
+    color: #ccc;
     margin-right: 10px;
 }
 .tarifwrap .owl-dots button{
@@ -479,8 +479,8 @@ nav ul li a:hover:after{
 }
 .box-wrap .box{
     cursor: pointer;
-    /* background: #f1f8ff; */
     display: flex;
+    background-color: #fff;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -502,7 +502,7 @@ nav ul li a:hover:after{
             inset 5px 5px 7px rgba(70, 70, 70, 0.12);
 }
 .box-wrap .box .img{
-    font-size: 2em;
+    font-size: 3em;
     color: #008ADF;
 }
 .box-wrap .box img{
